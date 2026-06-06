@@ -1,0 +1,25 @@
+name: IndexNow
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.html"
+      - "sitemap.xml"
+      - "robots.txt"
+      - "87041de259bd4e94b8b60c79ddc77956.txt"
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    if: ${{ vars.SITE_URL != '' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Submit all public URLs to IndexNow
+        shell: pwsh
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: ./scripts/submit-indexnow.ps1 -All
