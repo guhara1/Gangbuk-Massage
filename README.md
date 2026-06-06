@@ -34,7 +34,7 @@ $env:SITE_URL="https://gangbuk-massage.pages.dev"
 ./scripts/submit-indexnow.ps1 -All
 ```
 
-사이트맵/robots 생성:
+사이트맵/RSS/robots 생성:
 
 ```powershell
 $env:SITE_URL="https://gangbuk-massage.pages.dev"
@@ -42,6 +42,12 @@ $env:SITE_URL="https://gangbuk-massage.pages.dev"
 ```
 
 GitHub Actions는 `main` 브랜치에 HTML 또는 SEO 파일이 변경되면 `SITE_URL` 값을 사용해 IndexNow에 전체 공개 URL을 제출합니다.
+
+생성 파일:
+
+- `sitemap.xml`: Google, Naver, Bing용 XML sitemap
+- `rss.xml`: RSS 2.0 URL feed
+- `robots.txt`: Googlebot, Naver Yeti, Bingbot 접근 허용 및 sitemap/RSS 위치 안내
 
 Google은 IndexNow에 참여하지 않으며 Google sitemap ping endpoint는 deprecated입니다. Google은 `robots.txt`의 `Sitemap:` 라인과 Google Search Console 사이트맵 제출로 처리하세요.
 

@@ -1,4 +1,17 @@
 User-agent: *
 Allow: /
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
 Sitemap: https://gangbuk-massage.pages.dev/sitemap.xml
+Sitemap: https://gangbuk-massage.pages.dev/rss.xml

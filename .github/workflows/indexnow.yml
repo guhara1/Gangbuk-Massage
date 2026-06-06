@@ -7,6 +7,7 @@ on:
     paths:
       - "**/*.html"
       - "sitemap.xml"
+      - "rss.xml"
       - "robots.txt"
       - "87041de259bd4e94b8b60c79ddc77956.txt"
 
