@@ -13,12 +13,112 @@
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav area-nav" aria-label="지역 페이지 메뉴">
+    <nav class="nav" aria-label="주 메뉴">
       <a class="brand" href="../../index.html" aria-label="Feel 마사지 홈">
         <span class="brand-mark">F</span>
-        <span><strong>Feel 마사지</strong><small>Gangbuk Area Guide</small></span>
+        <span>
+          <strong>Feel 마사지</strong>
+          <small>Gangbuk Wellness Booking</small>
+        </span>
       </a>
-      <div class="area-nav-links"><a href="../../index.html">홈</a><a href="../area/">지역별 안내</a><a href="../mia-area/">미아권역</a><a href="../beon-area/">번동권역</a><a href="../suyu-area/">수유권역</a><a href="../ui-area/">우이권역</a></div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="primary-menu" class="menu">
+        <li><a href="../../index.html">홈</a></li>
+        <li class="has-sub">
+          <a href="../../index.html#intro" aria-haspopup="true">강북출장마사지</a>
+          <ul class="submenu">
+            <li><a href="../../index.html#intro">강북구 출장마사지 소개</a></li>
+            <li><a href="../area/">출장 가능 지역</a></li>
+            <li><a href="../../index.html#reservation">예약 진행 방식</a></li>
+            <li><a href="../../index.html#guide">위생 및 안전 안내</a></li>
+            <li><a href="../../index.html#guide">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="has-sub has-mega">
+          <a href="../area/" aria-haspopup="true">지역별 안내</a>
+          <div class="submenu mega">
+            <div class="submenu-group">
+              <a class="group-title" href="../mia-area/">미아권역</a>
+              <a href="../mia-dong/">미아동</a>
+              <a href="../samyang-dong/">삼양동</a>
+              <a href="../songjung-dong/">송중동</a>
+              <a href="../songcheon-dong/">송천동</a>
+              <a href="../samgaksan-dong/">삼각산동</a>
+            </div>
+            <div class="submenu-group">
+              <a class="group-title" href="../beon-area/">번동권역</a>
+              <a href="../beon-dong/">번동</a>
+            </div>
+            <div class="submenu-group">
+              <a class="group-title" href="../suyu-area/">수유권역</a>
+              <a href="../suyu-dong/">수유동</a>
+              <a href="../insu-dong/">인수동</a>
+            </div>
+            <div class="submenu-group">
+              <a class="group-title" href="../ui-area/">우이권역</a>
+              <a href="../ui-dong/">우이동</a>
+            </div>
+          </div>
+        </li>
+        <li class="has-sub">
+          <a href="../../index.html#courses" aria-haspopup="true">코스안내</a>
+          <ul class="submenu">
+            <li><a href="../../index.html#courses">전체 코스</a></li>
+            <li><a href="../../index.html#courses">피로 회복 관리</a></li>
+            <li><a href="../../index.html#courses">아로마 관리</a></li>
+            <li><a href="../../index.html#courses">스포츠 관리</a></li>
+            <li><a href="../../index.html#courses">커플/가족 관리</a></li>
+            <li><a href="../../index.html#courses">기업/단체 관리</a></li>
+            <li><a href="../../index.html#courses">가격 안내</a></li>
+            <li><a href="../../index.html#courses">코스 선택 가이드</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="../../index.html#reservation" aria-haspopup="true">예약안내</a>
+          <ul class="submenu">
+            <li><a href="../../index.html#reservation">예약 방법</a></li>
+            <li><a href="../../index.html#reservation">예약 가능 시간</a></li>
+            <li><a href="../../index.html#reservation">방문 가능 장소</a></li>
+            <li><a href="../../index.html#reservation">결제 안내</a></li>
+            <li><a href="../../index.html#reservation">변경/취소 안내</a></li>
+            <li><a href="../../index.html#reservation">예약 전 체크사항</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="../../index.html#guide" aria-haspopup="true">이용가이드</a>
+          <ul class="submenu">
+            <li><a href="../../index.html#guide">처음 이용하시는 분</a></li>
+            <li><a href="../../index.html#guide">방문 전 준비사항</a></li>
+            <li><a href="../../index.html#guide">위생 및 안전 기준</a></li>
+            <li><a href="../../index.html#guide">관리 후 주의사항</a></li>
+            <li><a href="../../index.html#guide">금지행위 안내</a></li>
+            <li><a href="../../index.html#guide">이용 FAQ</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="../../index.html#reviews" aria-haspopup="true">고객후기</a>
+          <ul class="submenu">
+            <li><a href="../../index.html#reviews">전체 후기</a></li>
+            <li><a href="../../index.html#reviews">미아권역 후기</a></li>
+            <li><a href="../../index.html#reviews">번동권역 후기</a></li>
+            <li><a href="../../index.html#reviews">수유권역 후기</a></li>
+            <li><a href="../../index.html#reviews">우이권역 후기</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="../../index.html#contact" aria-haspopup="true">고객센터</a>
+          <ul class="submenu align-right">
+            <li><a href="../../index.html#contact">공지사항</a></li>
+            <li><a href="../../index.html#guide">자주 묻는 질문</a></li>
+            <li><a href="../../index.html#contact">1:1 문의</a></li>
+            <li><a href="../../index.html#contact">제휴/기업 문의</a></li>
+            <li><a href="../../index.html#contact">개인정보처리방침</a></li>
+            <li><a href="../../index.html#contact">이용약관</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
   </header>
   <main>
