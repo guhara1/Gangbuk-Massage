@@ -24,20 +24,20 @@ IndexNow 키 파일은 사이트 루트의 `87041de259bd4e94b8b60c79ddc77956.txt
 배포 도메인이 정해지면 GitHub 저장소 `Settings > Secrets and variables > Actions > Variables`에 아래 값을 추가하세요.
 
 ```text
-SITE_URL=https://example.com
+SITE_URL=https://gangbuk-massage.pages.dev
 ```
 
 수동 제출:
 
 ```powershell
-$env:SITE_URL="https://example.com"
+$env:SITE_URL="https://gangbuk-massage.pages.dev"
 ./scripts/submit-indexnow.ps1 -All
 ```
 
 사이트맵/robots 생성:
 
 ```powershell
-$env:SITE_URL="https://example.com"
+$env:SITE_URL="https://gangbuk-massage.pages.dev"
 ./scripts/build-sitemap.ps1
 ```
 
